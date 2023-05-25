@@ -10,10 +10,6 @@ const montserrat = Montserrat({
   display: 'swap',
 });
 
-export const metadata = {
-  title: 'Portofolio || Tri Hartono',
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
