@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-lightColors dark:bg-zinc-900;
+  }
+  h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold;
+  }
+  h2 {
+    @apply text-base md:text-xl lg:text-2xl font-semibold;
+  }
+  h3 {
+    @apply text-sm md:text-base;
+  }
+  p {
+    @apply text-sm lg:text-base;
+  }
+  button {
+    @apply px-4 py-1 border rounded-md transition duration-300 hover:bg-darkColors hover:text-lightColors;
+  }
+  input,
+  textArea {
+    @apply px-2 py-2 bg-lightColors dark:bg-darkColors rounded-md;
+  }
+}
+@layer components {
+  .px-setting {
+    @apply px-4 md:px-24 lg:px-32 xl:px-40;
+  }
+  .form-input {
+    @apply w-full flex flex-col space-y-2 border-b border-zinc-800;
+  }
+  .active {
+    @apply font-bold underline;
+  }
+}
