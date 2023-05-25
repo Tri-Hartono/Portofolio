@@ -17,7 +17,7 @@ const DataWork = [
 ];
 export default function Experience({ title }) {
   return (
-    <div className="space-y-2   w-full lg:w-1/2">
+    <div className="space-y-2   w-full ">
       <h2 className="flex flex-col leading-4">
         Work <span>Experience</span>
       </h2>
