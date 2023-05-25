@@ -5,9 +5,8 @@ import Education from './education';
 import { useAnimation, useInView, motion } from 'framer-motion';
 
 export default function AboutMe() {
-  const ref = useRef(null);
+  const ref = useRef();
   const isInView = useInView(ref);
-
   const animation = useAnimation();
   useEffect(() => {
     if (isInView) {

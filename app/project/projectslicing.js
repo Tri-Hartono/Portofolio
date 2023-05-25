@@ -19,8 +19,8 @@ export default function ProjectSlicing() {
   };
 
   const isInView = useInView(contentRef);
-
   const animation = useAnimation();
+
   useEffect(() => {
     if (isInView) {
       animation.start('visible');
@@ -55,9 +55,9 @@ export default function ProjectSlicing() {
         <HiChevronRight className="h-6 w-full" />
       </div>
       <div ref={contentRef} id="content" className=" flex overflow-x-auto w-full items-start  justify-start relative  scroll-smooth gap-6 md:gap-10 scrollbar-hide ">
-        {SlicingData.map((item, index) => (
+        {SlicingData.map((item) => (
           <motion.div animate={animation} initial="hidden" variants={variants}>
-            <CardSlicing key={index} title={item.title} desc={item.desc.substring(0, 60) + '...'} build={item.build} image={item.image} github={item.github} color={item.color} link={item.link} />
+            <CardSlicing key={item.title} title={item.title} desc={item.desc.substring(0, 60) + '...'} build={item.build} image={item.image} github={item.github} color={item.color} link={item.link} />
           </motion.div>
         ))}
       </div>
