@@ -25,7 +25,7 @@ export default function ProjectSlicing() {
     if (isInView) {
       animation.start('visible');
     }
-  }, [isInView]);
+  }, [animation, isInView]);
 
   const variants = {
     hidden: { x: 100 },

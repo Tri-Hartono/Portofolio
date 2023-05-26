@@ -5,14 +5,14 @@ import Education from './education';
 import { useAnimation, useInView, motion } from 'framer-motion';
 
 export default function AboutMe() {
-  const ref = useRef();
+  const ref = useRef(null);
   const isInView = useInView(ref);
   const animation = useAnimation();
   useEffect(() => {
     if (isInView) {
       animation.start('visible');
     }
-  }, [isInView]);
+  }, [animation, isInView]);
 
   const variantsEducation = {
     hidden: { x: -100 },
