@@ -59,9 +59,9 @@ export default function ProjectDesign() {
         </div>
       </div>
       <div ref={contentRef} id="content" className=" flex overflow-x-auto w-full items-start  justify-start relative  scroll-smooth gap-6 md:gap-10 scrollbar-hide ">
-        {DesignData.map((item) => (
-          <motion.div animate={animation} initial="hidden" variants={variants}>
-            <CardDesign key={item.title} title={item.title} image={item.image} />
+        {DesignData.map((item, index) => (
+          <motion.div key={index} animate={animation} initial="hidden" variants={variants}>
+            <CardDesign title={item.title} image={item.image} />
           </motion.div>
         ))}
       </div>

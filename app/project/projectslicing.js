@@ -55,9 +55,9 @@ export default function ProjectSlicing() {
         <HiChevronRight className="h-6 w-full" />
       </div>
       <div ref={contentRef} id="content" className=" flex overflow-x-auto w-full items-start  justify-start relative  scroll-smooth gap-6 md:gap-10 scrollbar-hide ">
-        {SlicingData.map((item) => (
-          <motion.div animate={animation} initial="hidden" variants={variants}>
-            <CardSlicing key={item.title} title={item.title} desc={item.desc.substring(0, 60) + '...'} build={item.build} image={item.image} github={item.github} color={item.color} link={item.link} />
+        {SlicingData.map((item, index) => (
+          <motion.div key={index} animate={animation} initial="hidden" variants={variants}>
+            <CardSlicing title={item.title} desc={item.desc.substring(0, 60) + '...'} build={item.build} image={item.image} github={item.github} color={item.color} link={item.link} />
           </motion.div>
         ))}
       </div>
