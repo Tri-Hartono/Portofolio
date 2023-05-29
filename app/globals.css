@@ -19,11 +19,12 @@
     @apply text-sm lg:text-base;
   }
   button {
-    @apply px-4 py-1 border rounded-md transition duration-300 hover:bg-darkColors hover:text-lightColors;
+    @apply px-4 py-1 border rounded-md transition duration-300 border-darkColors hover:border-lightColors
+     hover:bg-blueColors text-darkColors dark:text-lightColors dark:border-lightColors hover:text-lightColors;
   }
   input,
   textArea {
-    @apply px-2 py-2 bg-lightColors dark:bg-darkColors rounded-md;
+    @apply px-2 py-2 bg-lightColors dark:bg-darkColors  rounded-md;
   }
 }
 @layer components {

@@ -23,9 +23,11 @@ export default function Header() {
           I am a frontend developer who has responsive web design skills and beautiful UI, I like to learn new things according to my field. For me the job is a responsibility that is carried out carefully and to the maximum extent
           possible, both personal and team work
         </p>
-        <Link href="#contact" className="cursor-pointer">
-          <ButtonProps name="Hire Me" icon={<HiArrowSmDown />} />
-        </Link>
+        <div className="py-4 w-fit">
+          <Link href="#contact" className="cursor-pointer">
+            <ButtonProps name="Hire Me" icon={<HiArrowSmDown />}></ButtonProps>
+          </Link>
+        </div>
       </div>
       {/* <div className="relative w-full md:w-1/2 h-full flex items-start   overflow-hidden ">
         <Image className="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-2xl overflow-hidden" src={Profile} width="" height="" alt="Profile" />

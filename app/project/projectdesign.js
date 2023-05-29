@@ -3,10 +3,10 @@ import React, { useEffect, useRef } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { DesignData } from '../../assets/data';
 import CardDesign from '../../components/card/cardproject/carddesign';
-import { useAnimation, useInView, motion } from 'framer-motion';
+import { useAnimation, useInView } from 'framer-motion';
+import MotionRight from '../../components/motion/motionright';
 export default function ProjectDesign() {
   const contentRef = useRef(null);
-
   const scrollLeft = () => {
     if (contentRef.current) {
       contentRef.current.scrollLeft -= 300;
@@ -26,15 +26,6 @@ export default function ProjectDesign() {
     }
   }, [animation, isInView]);
 
-  const variants = {
-    hidden: { x: 100 },
-    visible: {
-      x: 0,
-      transition: {
-        duration: 0.8,
-      },
-    },
-  };
   return (
     <div
       className="flex flex-col  justify-center
@@ -60,9 +51,9 @@ export default function ProjectDesign() {
       </div>
       <div ref={contentRef} id="content" className=" flex overflow-x-auto w-full items-start  justify-start relative  scroll-smooth gap-6 md:gap-10 scrollbar-hide ">
         {DesignData.map((item, index) => (
-          <motion.div key={index} animate={animation} initial="hidden" variants={variants}>
+          <MotionRight key={index} animation={animation}>
             <CardDesign title={item.title} image={item.image} />
-          </motion.div>
+          </MotionRight>
         ))}
       </div>
     </div>

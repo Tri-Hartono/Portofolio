@@ -4,6 +4,7 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { CardSlicing } from '../../components/card';
 import { SlicingData } from '../../assets/data';
 import { useAnimation, useInView, motion } from 'framer-motion';
+import MotionRight from '../../components/motion/motionright';
 export default function ProjectSlicing() {
   const contentRef = useRef(null);
   const scrollLeft = () => {
@@ -27,16 +28,6 @@ export default function ProjectSlicing() {
     }
   }, [animation, isInView]);
 
-  const variants = {
-    hidden: { x: 100 },
-    visible: {
-      x: 0,
-      transition: {
-        duration: 0.8,
-      },
-    },
-  };
-
   return (
     <div
       className="flex flex-col  justify-center
@@ -56,9 +47,9 @@ export default function ProjectSlicing() {
       </div>
       <div ref={contentRef} id="content" className=" flex overflow-x-auto w-full items-start  justify-start relative  scroll-smooth gap-6 md:gap-10 scrollbar-hide ">
         {SlicingData.map((item, index) => (
-          <motion.div key={index} animate={animation} initial="hidden" variants={variants}>
+          <MotionRight key={index} animation={animation}>
             <CardSlicing title={item.title} desc={item.desc.substring(0, 60) + '...'} build={item.build} image={item.image} github={item.github} color={item.color} link={item.link} />
-          </motion.div>
+          </MotionRight>
         ))}
       </div>
     </div>

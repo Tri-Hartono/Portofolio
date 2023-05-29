@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function ButtonProps({ name, icon }) {
+export default function ButtonProps({ name, icon, type }) {
   return (
-    <div className="py-4">
-      <button className="flex items-center gap-2">
+    <div className="">
+      <button type={type} className="flex items-center gap-2 ">
         {name}
         <div>{icon}</div>
       </button>

@@ -102,10 +102,7 @@ export default function Contact() {
             <label className="">Message</label>
             <textarea name="message" className="" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" className="flex gap-2 items-center w-fit bg-darkColors rounded-lg px-6 py-2 border-2 border-slate-200 text-white ">
-            Send
-            <HiOutlinePaperAirplane />
-          </button>
+          <ButtonProps type="submit" name="Send" icon={<HiOutlinePaperAirplane />} />
         </form>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from 'react';
 export default function CardAbout({ title, year, company, desc }) {
   return (
     <div className="py-2">
-      <div className="space-y-4  px-4 py-2 rounded-md relative shadow">
+      <div className="space-y-4  px-4 py-2 rounded-md relative shadow  ">
         <div className="flex justify-between items-center">
           <h2>{title}</h2>
           <h3>{year}</h3>

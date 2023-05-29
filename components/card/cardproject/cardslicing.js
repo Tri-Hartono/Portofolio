@@ -22,7 +22,7 @@ export default function CardSlicing(props) {
           </div>
           <p>{props.desc}</p>
 
-          <div className="flex gap-4 py-4 ">
+          <div className="flex gap-4 py-6 ">
             <a href={`${props.link}`} target="_blank">
               <ButtonProps name="demo" icon={<HiOutlineExternalLink />} />
             </a>
