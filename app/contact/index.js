@@ -7,6 +7,7 @@ import { SiFacebook, SiGithub, SiInstagram } from 'react-icons/si';
 import Image from 'next/image';
 import { Thanks } from '../../assets/images';
 import ButtonProps from '../../components/button';
+import Box from '../../components/Svg/box';
 
 const SosialLink = [
   {
@@ -54,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <div className=" flex flex-col-reverse md:flex-row gap-8 items-start pt-10" id="contact">
+    <div className=" flex flex-col-reverse md:flex-row gap-8 items-start pt-10 relative" id="contact">
       <div className={sendClick ? 'fixed inset-0 z-30 bg-darkColors/50 dark:bg-lightColors/50 flex items-center justify-center' : 'hidden'} onClick={() => setSendClick(false)}>
         <div className="w-[80%] h-[60%] md:w-[50%] md:h-[80%] flex flex-col  items-center justify-center   bg-lightColors text-darkColors rounded-md shadow relative ">
           <div className="absolute -top-2 -right-2 p-2 text-lightColors bg-darkColors rounded-full" onClick={() => setSendClick(false)}>
@@ -104,6 +105,10 @@ export default function Contact() {
           </div>
           <ButtonProps type="submit" name="Send" icon={<HiOutlinePaperAirplane />} />
         </form>
+      </div>
+      <div className="absolute z-0 -top-0 opacity-5  -left-1/4 w-3/4 ">
+        <div className="w-1/2 -right-1/4 rounded-full z-10 rotate-12 h-full bg-lightColors dark:bg-darkColors absolute"></div>
+        <Box width={800} height={500} />
       </div>
     </div>
   );

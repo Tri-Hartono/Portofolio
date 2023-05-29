@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <Providers>
           <Navbar />
-          <div className="px-setting 2xl:w-3/4 m-auto">{children}</div>
+          <div className="px-setting 2xl:w-3/4 m-auto overflow-x-hidden">{children}</div>
           <Footer />
         </Providers>
       </body>

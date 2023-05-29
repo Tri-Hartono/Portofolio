@@ -6,6 +6,7 @@ import { useAnimation, useInView, motion } from 'framer-motion';
 import Tittle from '../../components/title';
 import MotionLeft from '../../components/motion/motionleft';
 import MotionRight from '../../components/motion/motionright';
+import Box from '../../components/Svg/box';
 
 export default function AboutMe() {
   const ref = useRef(null);
@@ -36,7 +37,7 @@ export default function AboutMe() {
   //   },
   // };
   return (
-    <div ref={ref} id="about" className="">
+    <div ref={ref} id="about" className="relative">
       <Tittle titleSatu="About" titleDua="Me" />
       <div className="w-auto p-2 flex flex-col lg:flex-row justify-between gap-4 lg:gap-10">
         <MotionLeft animation={animation}>
