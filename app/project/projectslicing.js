@@ -38,10 +38,10 @@ export default function ProjectSlicing() {
         <Tittle titleSatu="Slicing" titleDua="Design" />
         {/* <h2> More</h2> */}
       </div>
-      <div onClick={scrollLeft} className="absolute z-20 -left-2 p-2 rounded-full bg-darkColors text-white">
+      <div onClick={scrollLeft} className="absolute z-20 -left-2 p-2 rounded-full bg-darkColors text-white dark:bg-lightColors/90 dark:text-darkColors">
         <HiChevronLeft className="h-6 w-full" />
       </div>
-      <div onClick={scrollRight} className="absolute z-20 -right-4 p-2  rounded-full bg-darkColors text-white">
+      <div onClick={scrollRight} className="absolute z-20 -right-4 p-2  rounded-full bg-darkColors text-white dark:bg-lightColors/90 dark:text-darkColors">
         <HiChevronRight className="h-6 w-full" />
       </div>
       <div ref={contentRef} id="content" className=" flex overflow-x-auto w-full items-start  justify-start relative  scroll-smooth gap-6 md:gap-10 scrollbar-hide ">

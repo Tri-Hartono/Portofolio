@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectDesign from './projectdesign';
 import ProjectSlicing from './projectslicing';
 

@@ -118,7 +118,7 @@ export default function Contact() {
           </form>
         </div>
       </MotionRight>
-      <div className="absolute z-0 opacity-5 bottom-0 h-1/4 md:h-full -left-1/4 w-full  ">
+      <div className="absolute z-0 opacity-10 bottom-0 h-1/4 md:h-full -left-1/4 w-full  ">
         <div className="md:left-1/4 md:-top-4 w-1/2 rounded-3xl z-10 rotate-12 h-full bg-lightColors dark:bg-darkColors absolute"></div>
         <Box width={600} height={500} />
       </div>

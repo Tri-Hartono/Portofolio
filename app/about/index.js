@@ -29,9 +29,9 @@ export default function AboutMe() {
           <Experience />
         </MotionRight>
       </div>
-      <div className="absolute z-0 -bottom-1/4 opacity-5  -left-1/4 w-full   ">
-        <div className="w-full md:w-3/4 -top-4 right-0 rounded-3xl z-10 rotate-6 h-full bg-lightColors dark:bg-darkColors absolute"></div>
-        <Box width={800} height={500} />
+      <div className="absolute z-0 bottom-0 opacity-10  -left-1/4 w-full   ">
+        <div className="w-3/4 -top-4 right-0  rounded-3xl z-10 rotate-6 h-full bg-lightColors dark:bg-darkColors absolute"></div>
+        <Box width={400} height={500} />
       </div>
     </div>
   );

@@ -2,14 +2,14 @@
 import Image from 'next/image';
 import React from 'react';
 import { HandIcon } from '../../assets/images';
-import { HiArrowSmDown } from 'react-icons/hi';
+import { HiOutlineChevronDown, HiOutlineArrowCircleDown } from 'react-icons/hi';
 import ButtonProps from '../../components/button';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Box from '../../components/Svg/box';
+import { Link } from 'react-scroll';
 export default function Header() {
   return (
-    <motion.div animate={{ x: 0 }} initial={{ x: '-100%' }} transition={{ duration: 1 }} id="/" className="pt-20  flex items-center relative ">
+    <motion.div animate={{ x: 0 }} initial={{ x: '-100%' }} transition={{ duration: 1 }} id="/" className="py-10 md:py-20 flex flex-col  justify-center relative ">
       <div className="md:w-[75%] space-y-4 relative z-20 ">
         <div className="flex items-center gap-2">
           <h3>Hi,</h3>
@@ -25,15 +25,15 @@ export default function Header() {
           I am a frontend developer who has responsive web design skills and beautiful UI, I like to learn new things according to my field. For me the job is a responsibility that is carried out carefully and to the maximum extent
           possible, both personal and team work
         </p>
-        <div className="py-4 w-fit">
-          <Link href="#contact" className="cursor-pointer">
-            <ButtonProps name="Hire Me" icon={<HiArrowSmDown />}></ButtonProps>
+        <div className="py-4 w-fit ">
+          <Link to="contact" spy={true} activeClass="active" smooth={true} offset={-100} className="cursor-pointer">
+            <ButtonProps name="Hire Me" icon={<HiOutlineChevronDown />}></ButtonProps>
           </Link>
         </div>
       </div>
-      <div className="absolute z-0 -top-1/4 opacity-5  -right-1/4 w-3/4 ">
+      <div className="absolute z-0 -top-1/4 opacity-10 h-4/5 -right-1/4 w-3/4 md:h-full ">
         <div className="w-1/2 -left-1/4 rounded-3xl z-10 -rotate-12 h-full bg-lightColors dark:bg-darkColors absolute"></div>
-        <Box width={800} height={500} />
+        <Box width={800} height="auto" />
       </div>
     </motion.div>
   );

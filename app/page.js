@@ -2,6 +2,7 @@ import Header from './header';
 import Contact from './contact';
 import Project from './project';
 import AboutMe from './about';
+import Skills from './skills';
 
 export const metadata = {
   title: 'Portofolio || Tri Hartono',
@@ -14,6 +15,7 @@ export default function Home() {
     <div className="space-y-12 md:space-y-20 lg:space-y-32 py-10 ">
       <Header />
       <AboutMe />
+      <Skills />
       <Project />
       <Contact />
     </div>

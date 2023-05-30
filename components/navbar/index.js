@@ -17,6 +17,10 @@ export const NavbarItems = [
     path: 'about',
   },
   {
+    navitem: 'Skill',
+    path: 'skill',
+  },
+  {
     navitem: 'Project',
     path: 'project',
   },

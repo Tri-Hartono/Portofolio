@@ -37,10 +37,10 @@ export default function ProjectDesign() {
       </div>
 
       <div className="absolute -bottom-16 w-full flex items-center  space-x-4 justify-center ">
-        <div onClick={scrollLeft} className="p-2 rounded-full bg-darkColors text-white">
+        <div onClick={scrollLeft} className="p-2 rounded-full bg-darkColors text-white dark:bg-lightColors/90 dark:text-darkColors">
           <HiChevronLeft className="h-6 w-full" />
         </div>
-        <div onClick={scrollRight} className="p-2  rounded-full bg-darkColors text-white">
+        <div onClick={scrollRight} className="p-2  rounded-full bg-darkColors text-white dark:bg-lightColors/90 dark:text-darkColors">
           <HiChevronRight className="h-6 w-full" />
         </div>
       </div>

@@ -1,4 +1,31 @@
-import { Nfttheme, RumahImpian, Selena, Chat, NftDesign, RumahImpianDesign, SuroriversideDesign, Mkstp, Wumbo, Wedding, InstagramPost } from '../images';
+import {
+  Nfttheme,
+  RumahImpian,
+  Selena,
+  Chat,
+  NftDesign,
+  RumahImpianDesign,
+  SuroriversideDesign,
+  Mkstp,
+  Wumbo,
+  Wedding,
+  InstagramPost,
+  Github,
+  Git,
+  Npm,
+  Yarn,
+  Vscode,
+  Figma,
+  Canva,
+  Html,
+  Css,
+  React,
+  Nodejs,
+  Bootstrap,
+  Tailwindcss,
+  JavaScript,
+  FramerMotion,
+} from '../images';
 export const SlicingData = [
   {
     title: 'Nft-theme',
@@ -78,3 +105,26 @@ export const DesignData = [
     image: InstagramPost,
   },
 ];
+
+//data skills
+
+export const ToolsData = {
+  Git: { name: 'Git', src: Git, desc: 'Version control' },
+  Github: { name: 'Github', src: Github, desc: 'Git hosting' },
+  NPM: { name: 'NPM', src: Npm, desc: 'Package manager' },
+  Yarn: { name: 'Yarn', src: Yarn, desc: 'Dependency tool' },
+  VSCode: { name: 'VSCode', src: Vscode, desc: 'Code editor' },
+  Figma: { name: 'Figma', src: Figma, desc: 'Design' },
+  Canva: { name: 'Canva', src: Canva, desc: 'design' },
+};
+
+export const StacksData = {
+  HTML: { name: 'HTML', src: Html, desc: 'Language' },
+  CSS: { name: 'CSS', src: Css, desc: 'Language' },
+  JS: { name: 'Javascript', src: JavaScript, desc: 'Language' },
+  React: { name: 'ReactJS', src: React, desc: 'Libary' },
+  NodeJS: { name: 'NodeJS', src: Nodejs, desc: 'Runtime' },
+  Tailwind: { name: 'Tailwind', src: Tailwindcss, desc: 'Framework' },
+  Bootstrap: { name: 'Bootstrap', src: Bootstrap, desc: 'Framework' },
+  FramerMotion: { name: 'FramerMotion', src: FramerMotion, desc: 'Animation' },
+};
