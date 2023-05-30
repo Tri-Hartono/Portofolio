@@ -93,7 +93,7 @@ export default function Contact() {
         </div>
       </MotionLeft>
       <MotionRight animation={animation}>
-        <div className="w-full md:w-1/2  space-y-4  ">
+        <div className="w-full md:w-1/2  space-y-4 relative z-10  ">
           <Tittle titleSatu="Get In" titleDua="Touch" />
           <form className="w-full flex flex-col gap-4 justify-center md:px-4" ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col lg:flex-row gap-4">
