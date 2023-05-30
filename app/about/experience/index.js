@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Experience() {
   return (
     <div className="space-y-2   w-full ">

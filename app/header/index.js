@@ -35,12 +35,6 @@ export default function Header() {
         <div className="w-1/2 -left-1/4 rounded-3xl z-10 -rotate-12 h-full bg-lightColors dark:bg-darkColors absolute"></div>
         <Box width={800} height={500} />
       </div>
-      {/* <div className="relative w-full md:w-1/2 h-full flex items-start   overflow-hidden ">
-        <Image className="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-2xl overflow-hidden" src={Profile} width="" height="" alt="Profile" />
-      </div> */}
-      {/* <div className="absolute bottom-0 right-0 bg-red-500 w-20 h-10">
-        <Wave width="100%" height="100%" />
-      </div> */}
     </motion.div>
   );
 }

@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function CardDesign({ title, image }) {
   return (
     <div className="">
       <div className="rounded-md relative  overflow-hidden shadow-lg group">
-        {/* style={{ boxShadow: `0px 10px 10px ${props.color}` }} */}
         <div className="w-[360px]   relative">
           <Image className="w-full h-full" alt={title} src={image} width="" height="" />
         </div>

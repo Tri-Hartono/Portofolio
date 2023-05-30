@@ -25,7 +25,6 @@ export const NavbarItems = [
     path: 'contact',
   },
 ];
-//framer-motion
 
 const variants = {
   open: { opacity: 1, x: 0 },

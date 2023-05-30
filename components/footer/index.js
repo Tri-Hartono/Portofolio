@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
-import { NavbarItems } from '../navbar';
 export default function Footer() {
   return (
     <div className="px-setting  ">

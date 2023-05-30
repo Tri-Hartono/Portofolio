@@ -35,12 +35,7 @@ export default function ProjectDesign() {
         <h1>Design</h1>
         {/* <h2>More</h2> */}
       </div>
-      {/* <div onClick={scrollLeft} className="absolute z-20 -left-2 p-2 mt-10 rounded-full bg-black/80 text-white">
-        <HiChevronLeft className="h-6 w-full" />
-      </div>
-      <div onClick={scrollRight} className="absolute z-20 -right-4 p-2  mt-10 rounded-full bg-black/80 text-white">
-        <HiChevronRight className="h-6 w-full" />
-      </div> */}
+
       <div className="absolute -bottom-16 w-full flex items-center  space-x-4 justify-center ">
         <div onClick={scrollLeft} className="p-2 rounded-full bg-darkColors text-white">
           <HiChevronLeft className="h-6 w-full" />

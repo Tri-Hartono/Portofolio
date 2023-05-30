@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { HiOutlinePencilAlt, HiOutlineExternalLink } from 'react-icons/hi';
 import ButtonProps from '../../button';
 import { SiGithub } from 'react-icons/si';
@@ -9,7 +8,6 @@ export default function CardSlicing(props) {
   return (
     <div className="py-4">
       <div className=" space-y-4  rounded-md relative  overflow-hidden shadow-lg  ">
-        {/* style={{ boxShadow: `0px 10px 10px ${props.color}` }} */}
         <div className="w-[320px]   relative shadow">
           <Image alt={props.title} src={props.image} width="" height="" />
         </div>
