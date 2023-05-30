@@ -1,3 +1,4 @@
 import CardSlicing from './cardproject/cardslicing';
+import CardDesign from './cardproject/carddesign';
 
-export { CardSlicing };
+export { CardSlicing, CardDesign };

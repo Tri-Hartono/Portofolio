@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { DesignData } from '../../assets/data';
-import CardDesign from '../../components/card/cardproject/carddesign';
+import { CardDesign } from '../../components/card';
 import { useAnimation, useInView } from 'framer-motion';
 import MotionRight from '../../components/motion/motionright';
 export default function ProjectDesign() {
