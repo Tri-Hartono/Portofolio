@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import Experience from './experience';
 import Education from './education';
-import { useAnimation, useInView, motion } from 'framer-motion';
+import { useAnimation, useInView } from 'framer-motion';
 import Tittle from '../../components/title';
 import MotionLeft from '../../components/motion/motionleft';
 import MotionRight from '../../components/motion/motionright';
@@ -18,24 +18,6 @@ export default function AboutMe() {
     }
   }, [animation, isInView]);
 
-  // const variantsEducation = {
-  //   hidden: { x: -100 },
-  //   visible: {
-  //     x: 0,
-  //     transition: {
-  //       duration: 0.8,
-  //     },
-  //   },
-  // };
-  // const variantsExperience = {
-  //   hidden: { x: 100 },
-  //   visible: {
-  //     x: 0,
-  //     transition: {
-  //       duration: 1,
-  //     },
-  //   },
-  // };
   return (
     <div ref={ref} id="about" className="relative">
       <Tittle titleSatu="About" titleDua="Me" />
@@ -46,6 +28,10 @@ export default function AboutMe() {
         <MotionRight animation={animation}>
           <Experience />
         </MotionRight>
+      </div>
+      <div className="absolute z-0 -bottom-1/4 opacity-5  -left-1/4 w-full   ">
+        <div className="w-full md:w-3/4 -top-4 right-0 rounded-3xl z-10 rotate-6 h-full bg-lightColors dark:bg-darkColors absolute"></div>
+        <Box width={800} height={500} />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { CardSlicing } from '../../components/card';
 import { SlicingData } from '../../assets/data';
 import { useAnimation, useInView, motion } from 'framer-motion';
 import MotionRight from '../../components/motion/motionright';
+import Tittle from '../../components/title';
 export default function ProjectSlicing() {
   const contentRef = useRef(null);
   const scrollLeft = () => {
@@ -34,9 +35,7 @@ export default function ProjectSlicing() {
      relative w-full  gap-4 lg:gap-10"
     >
       <div className="flex justify-between">
-        <h1 className="flex flex-col leading-[22px]">
-          Slicing <span>Design</span>
-        </h1>
+        <Tittle titleSatu="Slicing" titleDua="Design" />
         {/* <h2> More</h2> */}
       </div>
       <div onClick={scrollLeft} className="absolute z-20 -left-2 p-2 rounded-full bg-darkColors text-white">
