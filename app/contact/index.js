@@ -78,7 +78,7 @@ export default function Contact() {
         </div>
       </div>
       <MotionLeft animation={animation}>
-        <div className="w-full md:w-1/2 space-y-4 relative">
+        <div className="w-full md:w-1/2 space-y-4 relative z-10">
           <Tittle titleSatu="Contact" titleDua="Me" />
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-10">
             <div className="space-y-2">

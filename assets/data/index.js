@@ -42,7 +42,7 @@ export const SlicingData = [
     image: RumahImpian,
     build: 'React Js, TailwindCss ',
     link: 'https://rumah-impian-roan.vercel.app/',
-    github: 'https://github.com/Tri-Hartono/Nfttheme-nextjs',
+    github: 'https://github.com/Tri-Hartono/Rumah-impian',
     color: '#01804D',
   },
   {
@@ -51,7 +51,7 @@ export const SlicingData = [
     image: Chat,
     build: 'Next js, TailwindCss ',
     link: 'https://chat-nrechat.vercel.app/',
-    github: 'https://github.com/Tri-Hartono/Nfttheme-nextjs',
+    github: 'https://github.com/Tri-Hartono/ChatNrechat',
     color: '#4A72FF',
   },
   {
@@ -60,7 +60,7 @@ export const SlicingData = [
     image: Wumbo,
     build: 'Html, TailwindCss, Javascript ',
     link: 'https://wumbo-one.vercel.app/',
-    github: 'https://github.com/Tri-Hartono/Nfttheme-nextjs',
+    github: 'https://github.com/Tri-Hartono/ArrayId-Wumbo',
     color: '#0C4A6E',
   },
   {
@@ -69,7 +69,7 @@ export const SlicingData = [
     image: Mkstp,
     build: 'Html, TailwindCss , Javascript ',
     link: 'https://arrayid-mstskp-two.vercel.app/',
-    github: 'https://github.com/Tri-Hartono/Nfttheme-nextjs',
+    github: 'https://github.com/Tri-Hartono/Arrayid-mstskp',
     color: '#1B1525',
   },
   {
@@ -77,8 +77,8 @@ export const SlicingData = [
     desc: 'Sebuah aplikasi Portofolio Selena',
     image: Selena,
     build: 'Html, Css, Javascript ',
-    link: 'https://wumbo-one.vercel.app/',
-    github: 'https://github.com/Tri-Hartono/Nfttheme-nextjs',
+    link: 'https://selena-blue.vercel.app/',
+    github: 'https://github.com/Tri-Hartono/selena',
     color: '#2C2D2A',
   },
 ];
