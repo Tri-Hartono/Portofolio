@@ -30,7 +30,7 @@ function DarkMode() {
           <RiSunLine />
         </div>
       ) : (
-        <div className="mr-2 text-2xl text-gray-700">
+        <div className="mr-2 text-2xl text-gray-700 dark:text-lightColors">
           <span className="text-darkColors">
             <RiMoonClearLine />
           </span>

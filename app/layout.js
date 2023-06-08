@@ -1,4 +1,3 @@
-'use client';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import './globals.css';
@@ -9,6 +8,12 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   display: 'swap',
 });
+
+export const metadata = {
+  title: 'Portofolio || Tri Hartono',
+  description: 'Selamat datang di portofolio Tri Hartono. Temukan karya-karya saya dalam pengembangan web dan design.',
+  keywords: 'portofolio, Tri Hartono, desain, pengembangan web, karya, pengembang, web developer, frontend, UI/UX, admin, ',
+};
 
 export default function RootLayout({ children }) {
   return (
