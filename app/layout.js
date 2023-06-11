@@ -12,7 +12,14 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'Portofolio || Tri Hartono',
   description: 'Selamat datang di portofolio Tri Hartono. Temukan karya-karya saya dalam pengembangan web dan design.',
-  keywords: 'portofolio, Tri Hartono, desain, pengembangan web, karya, pengembang, web developer, frontend, UI/UX, admin, ',
+  keywords: 'portofolio, Portofolio Tri Hartono, Tri Hartono, desain, pengembangan web, karya, pengembang, web developer, frontend, UI/UX, admin, ',
+  images: [
+    {
+      url: '/Logo.png',
+      width: 257,
+      height: 302,
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
