@@ -9,7 +9,7 @@ export default function Experience() {
         <div className="py-2">
           <div className="space-y-4  px-4 py-2 rounded-md relative shadow  ">
             <div className="flex justify-between items-center">
-              <h3 className="font-bold">Admin & Data Entry</h3>
+              <h3 className="font-bold">Admin & Follow Up</h3>
               <h3>May 2021 - July 2022</h3>
             </div>
             <h3>DRYM CORP</h3>

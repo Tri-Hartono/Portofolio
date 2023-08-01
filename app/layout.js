@@ -13,6 +13,9 @@ export const metadata = {
   title: 'Portofolio || Tri Hartono',
   description: 'Selamat datang di portofolio Tri Hartono. Temukan karya-karya saya dalam pengembangan web dan design.',
   keywords: 'portofolio, Portofolio Tri Hartono, Tri Hartono, desain, pengembangan web, karya, pengembang, web developer, frontend, UI/UX, admin, ',
+  icons: {
+    icon: '/icon.png',
+  },
   images: [
     {
       url: '/Logo.png',
