@@ -12,10 +12,12 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'Portofolio || Tri Hartono',
   author: 'Tri Hartono',
-  url: 'https://trihartono-portofolio.vercel.app',
-  siteName: 'Portofolio | Tri Hartono',
   description: 'Selamat datang di portofolio Tri Hartono. Temukan karya-karya saya dalam pengembangan web dan design.',
   keywords: 'portofolio, Portofolio Tri Hartono, Tri Hartono, desain, pengembangan web, karya, pengembang, web developer, frontend, UI/UX, admin, ',
+  httpEquiv: 'Content-Type',
+  content: 'text/html; charset=utf-8',
+  url: 'https://trihartono-portofolio.vercel.app',
+  siteName: 'Portofolio | Tri Hartono',
   icons: {
     icon: '/icon.png',
   },
@@ -24,8 +26,17 @@ export const metadata = {
       url: 'https://trihartono-portofolio.vercel.app/logo.png',
       width: 257,
       height: 302,
+      alt: 'Portofolio || Tri Hartono',
     },
   ],
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portofolio || Tri Hartono',
+    description: 'Selamat datang di portofolio Tri Hartono. Temukan karya-karya saya dalam pengembangan web dan design.',
+    siteId: '@trihartono',
+    creator: '@trihartono',
+    images: ['https://trihartono-portofolio.vercel.app/logo.png'],
+  },
 };
 
 export default function RootLayout({ children }) {
