@@ -25,6 +25,7 @@ import {
   Tailwindcss,
   JavaScript,
   FramerMotion,
+  Store,
 } from '../images';
 export const SlicingData = [
   {
@@ -35,6 +36,15 @@ export const SlicingData = [
     link: 'https://nfttheme-nextjs.vercel.app/',
     github: 'https://github.com/Tri-Hartono/Nfttheme-nextjs',
     color: '#14141F',
+  },
+  {
+    title: 'Store Fake Api',
+    desc: 'NEW SEASON CHECK OUT ALL THE TRENDS',
+    image: Store,
+    build: 'Next js, TailwindCss, Typescript ',
+    link: 'https://tristore.vercel.app/',
+    github: 'https://github.com/Tri-Hartono/store',
+    color: '#000',
   },
   {
     title: 'Rumah Impian',

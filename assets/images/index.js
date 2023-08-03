@@ -28,6 +28,7 @@ import Npm from './imgskill/npm.png';
 import React from './imgskill/react.png';
 import Vscode from './imgskill/Vscode.png';
 import Yarn from './imgskill/yarn.png';
+import Store from './imgproject/store.jpg';
 
 export {
   HandIcon,
@@ -60,4 +61,5 @@ export {
   React,
   Vscode,
   Yarn,
+  Store,
 };

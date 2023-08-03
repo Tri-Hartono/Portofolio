@@ -28,6 +28,12 @@ export const metadata = {
       height: 302,
       alt: 'Portofolio || Tri Hartono',
     },
+    {
+      url: 'https://trihartono-portofolio.vercel.app/logo.png',
+      width: 1257,
+      height: 1302,
+      alt: 'Portofolio || Tri Hartono',
+    },
   ],
   twitter: {
     card: 'summary_large_image',
