@@ -1,11 +1,11 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
 import Image from 'next/image';
 import DarkMode from '../../app/darkmode';
 import { Link } from 'react-scroll';
 import Logo from '../Svg/Logo';
-import { motion } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import Box from '../Svg/box';
 export const NavbarItems = [
   {
@@ -38,7 +38,14 @@ const variants = {
 export default function Navbar() {
   const [navClick, setNavclick] = useState(false);
   const [color, setColor] = useState(false);
-
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const animation = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      animation.start('visible');
+    }
+  }, [animation, isInView]);
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
@@ -74,10 +81,16 @@ export default function Navbar() {
   // };
 
   return (
-    <div className={`fixed w-full flex flex-col  px-setting transition duration-300 z-40 shadow  ${color ? 'bg-lightColors/90 dark:bg-darkColors/80 dark:text-white border-b   ' : 'bg-transparent '}`}>
+    <motion.div
+      ref={ref}
+      initial={{ y: -250 }}
+      animate={{ y: -10 }}
+      transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+      className={`fixed w-full flex flex-col  px-setting transition duration-300 z-40 shadow py-2 md:py-0   ${color ? 'bg-lightColors/90 dark:bg-darkColors/80 dark:text-white border-b   ' : 'bg-transparent '}`}
+    >
       <div className="flex items-center justify-between w-full 2xl:w-3/4 m-auto h-12 md:h-16">
         <div className="w-6 h-6 lg:w-8 lg:h-8 ">
-          <Logo />
+          <Logo animation={animation} />
         </div>
         <div className="lg:gap-4 flex items-center gap-2 ">
           {NavbarItems.map((item, index) => (
@@ -108,6 +121,6 @@ export default function Navbar() {
           <Box width={200} height={300} />
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }

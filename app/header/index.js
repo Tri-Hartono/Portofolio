@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Box from '../../components/Svg/box';
 import { Link } from 'react-scroll';
 import Circle from '../../components/Svg/circle';
+import Blob from '../../components/Svg/Bloop';
 
 export default function Header() {
   return (
@@ -36,9 +37,6 @@ export default function Header() {
             <ButtonProps name="Hire Me" icon={<HiOutlineChevronDown />}></ButtonProps>
           </Link>
         </div>
-        {/* <div className="absolute -left-32 -bottom-24 md:-left-52 md:-bottom-20 -z-12">
-          <Circle />
-        </div> */}
       </div>
       <div className="absolute z-0 -top-1/4 opacity-10 h-4/5 -right-1/4 w-3/4 md:h-full ">
         <div className="w-1/2 -left-1/4 rounded-3xl z-10 -rotate-12 h-full bg-lightColors dark:bg-darkColors absolute"></div>
